@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<nav>
+    <label>
+        <input type="checkbox"  id="check">
+        <label for="check" class="checkbtn">
+           <img src="img/icons8-menu-24.png" alt="" class="menus">
+       
+        </label>
+
+
+        <div class="logo">
+<img src="img/logo.png" alt="">
+𝙽𝚊𝚒𝚓𝚊 𝚙𝚘𝚝
+        </div>
+
+       <a href="cart.html"><div class="cart"><img src="img/icons8-shopping-cart-30.png" alt="" width="30" class="cart-quanntity">
+            <div class="cart-update">
+               <div class="sp" id="cart-count">0</div>
+            </div>
+        </div>
+    </a> 
+        <ul>
+            <div class="ul-wrapper">
+            <span id="menu-close" class="menu-close">&times;</span>
+            
+            <li><a href="index.html"><span>HOME</span></a></li>  
+            <li><a href="menu.html">MENU</a></li>  
+            <li><a href="cart.html">CART</a></li>  
+            <li><a href="project.html">THE PROJECT</a></li>  
+            <li><a href="frankness.html">FRANKNESS</a></li>  
+            <li><a href=""><div class="get">
+                Get Started
+            </div></a> </li>
+            <li><a href=""><div class="get-explorer">
+                
+            </div></a> </li>
+        </div>
+            </ul>
+
+         
+</nav> 
+<header>
+    <p id="checkout-message" class="checkout-message">Thank you for choosing Naija pot! Your delicious meal is just a step away,</p>
+    <p id="empty-cart-message" class="checkout-message" style="background-color: #dc3545;">Your cart is empty. Please add items before checking out.</p>
+</header>
+<body>
+   
+    <main>
+        <div class="item">
+        <h1>Your Cart</h1>
+       <div class="headers">
+        <div class="items">item</div>
+        <div class="items">item</div>
+        <div class="items">item</div>
+        <div class="items">item</div>
+       </div>
+        <div id="cart-container"></div>
+     
+        <div class="total">
+            <span>Total: &#8358; <span id="total-price">0</span></span>
+        </div>
+        <button onclick="clearCart()" class="clear">Clear Cart</button>
+        </div>
+        <section class="checkout-section">
+          
+            <button id="checkout-btn" class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </section>
+    </main>
+    <script src="cart.js"></script>
+   
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="box">
+                <div class="box-header">
+                    Our Restaurants
+                </div>
+                <ol><a href="">Egbeda</a></ol>
+                <ol><a href=""> Ikoyi</a></ol>
+                <ol><a href="">Lekki</a></ol>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    Navigation
+                </div>
+                <div class="link-text">
+                <ol><a href="index.html">Reception</a></ol>
+                <ol><a href="menu.html"> Menu</a></ol>
+                <ol><a href="cart.html">Cart</a></ol>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                   The project
+                </div>
+                <div class="link-text">
+                <ol><a href="project.html">THE PROJECT</a></ol>
+               
+            </div>
+            </div>
+           
+        </div>
+    </div>
+</footer>
+
+</html>
+
+
